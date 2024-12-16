@@ -1,157 +1,83 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TableLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFEB3B"
+    android:orientation="vertical"
     android:gravity="center"
-    tools:context=".MainActivity">
+    android:padding="16dp">
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/statusTextView"
         android:layout_width="wrap_content"
-        android:layout_height="20dp"
-        android:layout_margin="10dp"
-        android:gravity="center">
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="110dp"
-            android:layout_height="30dp"
-            android:layout_marginStart="40dp"
-            android:text="Player1 : 0"
-            android:textColor="#000000"
-            android:textSize="18dp" />
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="110dp"
-            android:layout_height="30dp"
-            android:layout_marginLeft="30dp"
-            android:text="Player2 : 0"
-            android:textColor="#000000"
-            android:textSize="18dp" />
-    </LinearLayout>
+        <TableRow>
+            <Button
+                android:id="@+id/button00"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="24sp" />
+            <Button
+                android:id="@+id/button01"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="24sp" />
+            <Button
+                android:id="@+id/button02"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="24sp" />
+        </TableRow>
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="10dp"
-        android:gravity="center">
+        <TableRow>
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="24sp" />
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="24sp" />
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="24sp" />
+        </TableRow>
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginLeft="5dp"
-            android:background="#007BFF"
-            android:text="H"
-            android:textColor="#FFFFFF"
-            android:textSize="60dp" />
+        <TableRow>
+            <Button
+                android:id="@+id/button20"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="24sp" />
+            <Button
+                android:id="@+id/button21"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="24sp" />
+            <Button
+                android:id="@+id/button22"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="24sp" />
+        </TableRow>
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginLeft="5dp"
-            android:background="#007BFF"
-            android:text="H"
-            android:textColor="#FFFFFF"
-            android:textSize="60dp" />
+    </TableLayout>
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginLeft="5dp"
-            android:background="#007BFF"
-            android:textColor="#FFFFFF"
-            android:text="H"
-            android:textSize="60dp" />
-    </TableRow>
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset Game"
+        android:layout_marginTop="16dp" />
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="10dp"
-        android:gravity="center">
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginLeft="5dp"
-            android:background="#007BFF"
-            android:textColor="#FFFFFF"
-            android:text="H"
-            android:textSize="60dp" />
-
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginLeft="5dp"
-            android:background="#007BFF"
-            android:textColor="#FFFFFF"
-            android:text="H"
-            android:textSize="60dp" />
-
-        <Button
-            android:id="@+id/button6"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginLeft="5dp"
-            android:background="#007BFF"
-            android:textColor="#FFFFFF"
-            android:text="H"
-            android:textSize="60dp" />
-    </TableRow>
-
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="10dp"
-        android:gravity="center">
-        <Button
-            android:id="@+id/button7"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginLeft="5dp"
-            android:background="#007BFF"
-            android:textColor="#FFFFFF"
-            android:text="H"
-            android:textSize="60dp" />
-
-        <Button
-            android:id="@+id/button8"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginLeft="5dp"
-            android:background="#007BFF"
-            android:textColor="#FFFFFF"
-            android:text="H"
-            android:textSize="60dp" />
-
-        <Button
-            android:id="@+id/button9"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginLeft="5dp"
-            android:background="#007BFF"
-            android:textColor="#FFFFFF"
-            android:text="H"
-            android:textSize="60dp" />
-    </TableRow>
-
-
-    <LinearLayout
-        android:layout_marginTop="15dp"
-        android:gravity="center">
-
-        <Button
-            android:id="@+id/button10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Reset" />
-    </LinearLayout>
-
-</TableLayout>
+</LinearLayout>
