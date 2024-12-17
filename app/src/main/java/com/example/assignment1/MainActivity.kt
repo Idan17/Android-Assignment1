@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
 
         // Set reset button listener
         resetButton.setOnClickListener {
-//           TODO: create reset function
+            resetGame()
         }
 
         statusTextView.text = "$currentPlayer's turn"
@@ -111,6 +111,21 @@ class MainActivity : AppCompatActivity() {
                 buttons[i][j].isEnabled = false
             }
         }
+    }
+
+    private fun resetGame() {
+        currentPlayer = "X"
+        for (i in 0..2) {
+            for (j in 0..2) {
+                buttons[i][j].text = ""
+                buttons[i][j].isEnabled = true
+            }
+        }
+        updateStatus()
+    }
+
+    private fun updateStatus() {
+        statusTextView.text = "$currentPlayer's turn"
     }
 
 }
