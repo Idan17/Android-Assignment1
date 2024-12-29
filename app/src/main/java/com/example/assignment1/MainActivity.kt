@@ -21,12 +21,12 @@ class MainActivity : AppCompatActivity() {
 
         // Initialize views
         boardButtons = arrayOf(
-            arrayOf(findViewById(id.button00), findViewById(id.button01), findViewById(id.button02)),
-            arrayOf(findViewById(id.button10), findViewById(id.button11), findViewById(id.button12)),
-            arrayOf(findViewById(id.button20), findViewById(id.button21), findViewById(id.button22))
+            arrayOf(findViewById(id.main_activity_button00), findViewById(id.main_activity_button01), findViewById(id.main_activity_button02)),
+            arrayOf(findViewById(id.main_activity_button10), findViewById(id.main_activity_button11), findViewById(id.main_activity_button12)),
+            arrayOf(findViewById(id.main_activity_button20), findViewById(id.main_activity_button21), findViewById(id.main_activity_button22))
         )
 
-        resetButton = findViewById(id.resetButton)
+        resetButton = findViewById(id.main_activity_reset_button)
         statusTextView = findViewById(id.statusTextView)
 
         // Set click listeners for board buttons

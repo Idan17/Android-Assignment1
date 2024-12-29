@@ -20,35 +20,17 @@
 
         <TableRow>
             <Button
-                android:id="@+id/button00"
+                android:id="@+id/main_activity_button00"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:textSize="24sp" />
             <Button
-                android:id="@+id/button01"
+                android:id="@+id/main_activity_button01"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:textSize="24sp" />
             <Button
-                android:id="@+id/button02"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:textSize="24sp" />
-        </TableRow>
-
-        <TableRow>
-            <Button
-                android:id="@+id/button10"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:textSize="24sp" />
-            <Button
-                android:id="@+id/button11"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:textSize="24sp" />
-            <Button
-                android:id="@+id/button12"
+                android:id="@+id/main_activity_button02"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:textSize="24sp" />
@@ -56,17 +38,35 @@
 
         <TableRow>
             <Button
-                android:id="@+id/button20"
+                android:id="@+id/main_activity_button10"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:textSize="24sp" />
             <Button
-                android:id="@+id/button21"
+                android:id="@+id/main_activity_button11"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:textSize="24sp" />
             <Button
-                android:id="@+id/button22"
+                android:id="@+id/main_activity_button12"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/main_activity_button20"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="24sp" />
+            <Button
+                android:id="@+id/main_activity_button21"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="24sp" />
+            <Button
+                android:id="@+id/main_activity_button22"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:textSize="24sp" />
@@ -75,7 +75,7 @@
     </TableLayout>
 
     <Button
-        android:id="@+id/resetButton"
+        android:id="@+id/main_activity_reset_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Reset Game"
